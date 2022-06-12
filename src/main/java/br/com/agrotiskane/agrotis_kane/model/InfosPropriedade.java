@@ -6,6 +6,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 @Entity
 @SequenceGenerator(name="seq_infospropriedade", sequenceName = "seq_infospropriedades", allocationSize = 1, initialValue = 1)
 public class InfosPropriedade {
@@ -15,21 +20,5 @@ public class InfosPropriedade {
 	private Long id;
 	
 	private String nome;
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
 	
 }
