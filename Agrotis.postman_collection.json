@@ -1,0 +1,187 @@
+{
+	"id": "9d2a7f72-6531-df6f-23bf-54550e3eb7d3",
+	"name": "Agrotis",
+	"description": "",
+	"order": [
+		"7d8cb92f-c725-7e58-9242-6f5534c4ac53",
+		"0096c9a1-6127-f737-7ac0-b58d579b3cd8",
+		"fbc28c82-dc65-ddb1-e7fd-99095fe11aab",
+		"6b1ec9c9-8bc6-cf12-f7f1-ef582991a770",
+		"24f43755-ca3a-e5aa-7549-29a35ca6cbc2",
+		"80791ac5-87b6-05e2-9a5a-1fa6641ea364"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 0,
+	"owner": "10612168",
+	"public": false,
+	"requests": [
+		{
+			"id": "0096c9a1-6127-f737-7ac0-b58d579b3cd8",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/springboot-rest-api-agrotis/atualizar",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1655082391957,
+			"name": "Atualizar",
+			"description": "",
+			"collectionId": "9d2a7f72-6531-df6f-23bf-54550e3eb7d3",
+			"responses": [],
+			"rawModeData": "{\r\n   \"id\": 80,\r\n   \"nome\":\"Jon doe\",\r\n   \"dataInicial\":\"2022-02-02T17:41:44Z\",\r\n   \"dataFinal\":\"2022-02-02T17:41:44Z\",\r\n   \"infosPropriedade\":{\r\n      \"id\":1,\r\n      \"nome\":\"Nome Exemplo da fazenda\"\r\n   },\r\n   \"cnpj\":\"XX.XXX.XXX/0001-XX\",\r\n   \"laboratorio\":{\r\n      \"id\":1,\r\n      \"nome\":\"Laboratorio atualizado\"\r\n   },\r\n   \"observacoes\":\"Observacao exemplo de teste\"\r\n}"
+		},
+		{
+			"id": "24f43755-ca3a-e5aa-7549-29a35ca6cbc2",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/springboot-rest-api-agrotis/salvar",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1655082410789,
+			"name": "Salvar",
+			"description": "",
+			"collectionId": "9d2a7f72-6531-df6f-23bf-54550e3eb7d3",
+			"responses": [],
+			"rawModeData": "{\r\n   \"nome\":\"Jon doe\",\r\n   \"dataInicial\":\"2022-02-02T17:41:44Z\",\r\n   \"dataFinal\":\"2022-02-02T17:41:44Z\",\r\n   \"infosPropriedade\":{\r\n      \"id\":1,\r\n      \"nome\":\"Nome Exemplo da fazenda\"\r\n   },\r\n   \"cnpj\":\"XX.XXX.XXX/0001-XX\",\r\n   \"laboratorio\":{\r\n      \"id\":1,\r\n      \"nome\":\"Laboratorio exemplo\"\r\n   },\r\n   \"observacoes\":\"Observacao exemplo de teste\"\r\n}"
+		},
+		{
+			"id": "6b1ec9c9-8bc6-cf12-f7f1-ef582991a770",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8000/springboot-rest-api-agrotis/listartodos",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1655081323183,
+			"name": "Listar",
+			"description": "",
+			"collectionId": "9d2a7f72-6531-df6f-23bf-54550e3eb7d3",
+			"responses": []
+		},
+		{
+			"id": "7d8cb92f-c725-7e58-9242-6f5534c4ac53",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8000/springboot-rest-api-agrotis/deletar",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "iduser",
+					"value": "7",
+					"type": "text"
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1655071860964,
+			"name": "Deletar",
+			"description": "",
+			"collectionId": "9d2a7f72-6531-df6f-23bf-54550e3eb7d3",
+			"responses": []
+		},
+		{
+			"id": "80791ac5-87b6-05e2-9a5a-1fa6641ea364",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8000/springboot-rest-api-agrotis/buscarPorNome",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [
+				{
+					"key": "name",
+					"value": "post",
+					"type": "text"
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1655081342674,
+			"name": "Buscar por Nome",
+			"description": "",
+			"collectionId": "9d2a7f72-6531-df6f-23bf-54550e3eb7d3",
+			"responses": []
+		},
+		{
+			"id": "fbc28c82-dc65-ddb1-e7fd-99095fe11aab",
+			"headers": "Content-Type: application/json\niduser: 78\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "iduser",
+					"value": "78",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/springboot-rest-api-agrotis/buscaruserid",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1655082418350,
+			"name": "Buscar por Id",
+			"description": "",
+			"collectionId": "9d2a7f72-6531-df6f-23bf-54550e3eb7d3",
+			"responses": []
+		}
+	]
+}
