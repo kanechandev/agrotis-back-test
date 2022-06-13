@@ -5,6 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -18,7 +20,10 @@ public class Laboratorio {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_laboratorio")
 	private Long id;
-	
+
+
+	@NotNull
+	@NotEmpty(message = "Campo obrigatório.")
 	private String nome;
 	
 	

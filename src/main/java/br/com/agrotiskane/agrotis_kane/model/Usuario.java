@@ -41,12 +41,14 @@ public class Usuario implements Serializable{
 	@DateTimeFormat
 	private LocalDate dataFinal;
 	
+	@NotNull
 	@OneToOne
     @JoinColumn(name="laboratorio_id", nullable=false)
 	private Laboratorio laboratorio;	
 	
 	private String observacoes;
 	
+	@NotNull
 	@OneToOne
     @JoinColumn(name="infospropriedade_id", nullable=false)
 	private InfosPropriedade infosPropriedade;

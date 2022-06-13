@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
+import javax.validation.constraints.NotEmpty;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -19,6 +20,7 @@ public class InfosPropriedade {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_propriedade")
 	private Long id;
 	
+	@NotEmpty(message = "Campo obrigatório.")
 	private String nome;
 	
 }
